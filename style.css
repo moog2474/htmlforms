@@ -7,7 +7,7 @@ input{
     margin: 5px 0;
     width: 200px;
 }
-label{
+.label{
     padding: 10px;
     text-align: right;
 }
@@ -19,12 +19,12 @@ label{
     display: flex;
     justify-content: flex-end;
 }
-input:valid, input:in-range{
+/* input:valid, input:in-range{
     border-color: green;
 }
 input:invalid, input:out-of-range{
     border-color: red;
-}
+} */
 .mess{
     display: flex;
 }
