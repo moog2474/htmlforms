@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            text-align: center;
+            width: 500px;
+        }
+        input, select{
+            margin-top: 10px;
+        }
+        form{
+            border: 2px dashed brown;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset><legend>Member Demographics</legend>
+                <div class="member">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="" required>
+                    <p>Are you a Member?</p>
+                    <div class="row-tab">
+                        <input type="radio" id="member" name="member" value="Member"><label for="member">Member</label>
+                        <input type="radio" id="nonmember" name="member" value="Non-member"><label for="nonmember">Non-member</label>
+                    </div>
+                    <label for="Email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="" required>
+                </div>
+            </fieldset>
+            <label for="Facility">Facility</label>
+            <select name="selection" id="selecetion" required>
+                <option value="Badminton">Badminton</option>
+                <option value="Football">Football</option>
+                <option value="Basketball">Basketball</option>
+            </select>
+            <p>Select a reservation date and time:</p>
+            <div class="row-tab">
+                <input type="date">
+                <input type="time">
+            </div>
+            <input type="checkbox"><label for="agree">I agree to the club's reservation policy</label>
+            <div class="row-tab">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .row-tab{
+            padding-bottom: 10px;
+        }
+        .col{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Travel reservation form </h1>
+            <h2>* denotes mandotory</h2>
+    <div class="row-tab">
+        <div class="label-tab">
+            <label for="text">Full name*:</label>
+        </div>
+        <div class="input-tab">
+            <input type="text" id="fullname" name="fullname" placeholder="Firstname Lastname" required>
+        </div>
+    </div>   
+
+    <div class="row-tab">
+        <div class="label-tab">
+            <label for="text">Email address*:</label>
+        </div>
+        <div class="input-tab">
+            <input type="text" id="email" name="email" placeholder="EMAIL_ADDRESS" required>
+        </div>
+    </div>
+    <div class="row-tab">
+            <div class="label-tab">
+                <label for="text">Select Tour Package*:</label>
+            </div>
+        <div class="input-tab">
+        <select name="pakcage" id="package" required>
+            <option value="one">Goa</option>
+            <option value="two">US</option>
+            <option value="three">SK</option>
+            <option value="four">OP</option>
+            </select>
+        </div>
+    </div>
+    <div class="row-tab">
+        <div class="label-tab">
+            <label for="text">Arrival date*:</label>
+        </div>
+        <div class="input-tab">
+            <input type="date" id="date" name="date" required>
+        </div>
+    </div>
+    <div class="row-tab">
+        <div class="label-tab">
+            <label for="text">Number of persons*:</label>
+        </div>
+        <div class="input-tab">
+            <input type="number" id="number" name="number of ppl" placeholder="UNKNOWN_TYPE" required>
+        </div>
+    </div>
+    <div class="row-tab">
+        <div class="label-tab">
+            <label for="text">What would you want to avail?*</label>
+        </div>
+        <div class="input-tab col">
+            <label for="text">Boarding <input type="checkbox"></label>
+            <label for="text">Fooding <input type="checkbox"></label>
+            <label for="text">Sight seeing <input type="checkbox"></label>
+        </div>
+    </div>
+
+    <div class="row-tab">
+        <div class="label-tab">
+            <label for="text">Discount Coupon code:</label>
+        </div>
+        <div class="input-tab">
+            <input type="number" placeholder="UNKNOWN_TYPE" required>
+        </div>
+    </div>
+
+    <div class="row-tab">
+        <div class="label-tab">
+            <label for="text">Terms and conditions*</label>
+        </div>
+        <div class="input-tab">
+            <input type="radio" id="agree" name="agree" value="I agree"><label for="agree">I agree</label>
+            <input type="radio" id="disagree" name="agree" value="I disagree"><label for="disagree">I disagree</label>
+        </div>
+    </div>
+    <div class="row-tab">
+        <input type="submit" value="Complete reservation">
+    </div>
+    
+        </form>
+    </div>
+</body>
+</html>

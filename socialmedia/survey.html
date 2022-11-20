@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 700px;
+        }
+        form{
+            background-color: rgb(180, 107, 180);
+            opacity: 80%;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+        .container h1, p{
+            text-align: center;
+        }
+        body{
+            background-image: url(https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+            background-color: rgb(224, 75, 99);
+            color: white;
+        }
+        .one input{
+            width: 100%;
+            padding: 5px;
+        }
+        .one input:valid{
+            border: 2px solid green;
+        }
+        .one input:invalid{
+            border: 2px solid red;
+        }
+     
+        .pad{
+            padding: 30px 10px;
+        }
+     
+        .two{
+            margin: 5px;
+        }
+        #feedback{
+            height: 100px;
+            width: 98%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Social media хэрэглэчдийн судалгаа</h1>
+        <p>Судалгаанд оролцсон таньд баярлалаа.</p>
+        <form action="">
+         
+        <fieldset><legend>Ерөнхий мэдээлэл</legend>
+            <div class="pad">
+                <div class="row-tab one">
+                    <div class="label-tab">
+                        <label for="name">Нэр</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="text" id="fname" name="name" placeholder="Bat" required>
+                    </div>
+                </div>
+                <div class="row-tab one">
+                    <div class="label-tab">
+                        <label for="mail">И-мэйл</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                </div>
+                <div class="row-tab one">
+                    <div class="label-tab">
+                        <label for="Age">Нас</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="number" id="age" name="age" placeholder="29" min="14" max="49" required>
+                    </div>
+                </div>
+            </div>
+    </fieldset>
+
+        <fieldset><legend>Soical media</legend>
+            <div class="pad">
+
+                <div class="row-tab">
+                    <div class="label-tab one">
+                        <label for="q1">Та өдөрт хэдэн цаг social media ашигладаг вэ?</label>
+                    </div>
+                    <div class="input-tab">
+                        <select name="time" id="time" required>
+                            <option value="one">1 - 2цаг</option>
+                            <option value="two">2 - 3цаг</option>
+                            <option value="three">3 - 4цаг</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row-tab">
+                    <div class="label-tab">
+                        <div class="label-tab">
+                            <label for="q2">Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн алийг нь илүүд үздэг вэ?</label> 
+                        </div>
+                    </div>
+                    <div class="input-tab">
+                        <input type="radio" id="onlineshop" name="shop" value="onlineshop"><label for="onlineshop">Онлайн худалдан авалт хийх</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="radio" id="shopping" name="shop" value="shopping"><label for="shopping">Дэлгүүр орж худалдан авалт хийх</label>
+                    </div>
+                </div>
+                <div class="row-tab">
+                    <label for="platform">Та ямар social media platform ашигладаг вэ?</label>
+                    <div class="input-tab">
+                        <input type="checkbox" id="facebook" name="platform"><label for="facebook">Facebook</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="checkbox" id="instagram" name="platform"><label for="instagram">Instagram</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="checkbox" id="twitter" name="platform"><label for="twitter">Twitter</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="checkbox" id="reddit" name="platform"><label for="reddit">Reddit</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="checkbox" id="snapchat" name="platform"><label for="snapchat">Snapchat</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="checkbox" id="quora" name="platform"><label for="quora">Quora</label>
+                    </div>
+                    <div class="input-tab">
+                        <input type="checkbox" id="youtube" name="platform"><label for="youtube">Youtube</label>
+                    </div>
+                <div class="input-tab">
+                    <input type="checkbox" id="other" name="platform"><label for="other">Бусад</label>
+                </div>
+            </div>
+            </div>
+        </fieldset>
+        <div class="row-tab one two">
+            <div class="label-tab">
+                <label for="feedback">Санал хүсэлт</label>
+            </div>
+            <div class="input-tab">
+                <input type="text" id="feedback" name="fback" placeholder="Санал хүсэлтээ энд бичнэ үү.">
+            </div>
+            <div class="input-tab">
+                <input type="submit" value="Илгээх">
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
